@@ -1,0 +1,1439 @@
+Exercises -2
+2a) Creating Table Elements, Table Elements : Colspan/Rowspan Attributes, border, 
+cellspacing, cellpadding attributes
+What is table tag:
+<table> :
+A table is a structured set of data made up of rows and columns (tabular data). A table allows you 
+to quickly and easily look up values that indicate some kind of connection between different types 
+of data, for example a person and their age, or a day of the week, or the timetable for a class .
+Table tags :
+Tag Description 
+<table> It defines a table.
+<tr> It defines a row in a table.
+<th> It defines a header cell in a table.
+<td> It defines a cell in a table.
+Important attributes in table:
+Colspan and Rowspan: The rowspan and colspan are the attributes of <td> tag. These are used to 
+specify the number of rows or columns a cell should merge. The rowspan attribute is for merging 
+rows and the colspan attribute is for merging columns of the table in HTML.
+Border: The HTML <table> border Attribute is used to specify the border of a table. It sets the 
+border around the table cells.
+Syntax: <table border="1|0">
+Cell spacing: Cell spacing is the space between each cell
+Cell padding: Cell padding is the space between the cell edges and the cell content.
+<table border="1"
+ cellpadding="4"
+ cellspacing="5">
+ <thead>
+ <td><span>Name</span></td>
+ <td><span>Age</span></td>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Rani</td>
+ <td>30</td>
+ </tr>
+ <tr>
+ <td>Rajan</td>
+ <td>35</td>
+ </tr>
+ <tr>
+ <td>Akshaya</td>
+ <td>17</td>
+ </tr>
+ <tr>
+ <td>Ashick</td>
+ <td>13</td>
+ </tr>
+ </tbody>
+</table>
+Output:
+Timetable using table tags 
+<table border="5" align="center">
+<tr>
+<td align="center" height ="50">
+<b> Day </b>
+</td>
+<td align="center" height ="50">
+<b>I </br> 10:30 to 11:30 </b>
+</td>
+<td align="center" height="50">
+<b> II </br> 11:30 to 12:30 </b>
+</td>
+<td align="center" height="50">
+<b> III </br> 12:30 to 1:30 </b>
+</td>
+<td align="center" height="50">
+<b> IV </br> 1:30 to 2:30 </b>
+</td>
+<td align="center" height="50">
+<b> V </br> 2:30 to 3:30 </b>
+</td>
+</tr>
+<tr>
+<td align="center" height="50">
+<b> Monday </b>
+</td>
+<td align="center" height="50">
+CD
+</td>
+<td align="center" height="50">
+MPMC 
+</td>
+<td rowspan="6" align="center" height="50">
+<h2>L<br>U<br>N<br>C<br>H</h2>
+</td>
+<td align="center" height="50">
+ML 
+</td>
+<td align="center" height="50">
+MC 
+</td>
+</tr>
+<tr>
+<td align="center" height="50">
+<b> Tuesday </b>
+</td>
+<td align="center" height="50">
+CD
+</td>
+<td align="center" height="50">
+MPMC 
+</td>
+<td align="center" height="50">
+ML 
+</td>
+<td align="center" height="50">
+MC </td>
+</tr>
+</table>
+The HTML <form> element can contain one or more of the following form elements:
+1. <input>
+2. <label>
+3. <select>
+4. <textarea>
+5. <button>
+6. <fieldset>
+7. <legend>
+8. <datalist>
+The <datalist> tag specifies a list of pre-defined options for an <input> element.
+The <datalist> tag is used to provide an "autocomplete" feature for <input> elements. Users 
+will see a drop-down list of pre-defined options as they input data.
+9. <output>
+10. <option>
+11. <optgroup>
+The <optgroup> tag is used to group related options in a <select> element (drop-down list).
+Form Attributes:
+The following form attributes play the important role:
+Attribute Value Description
+action URL Specifies where to send the 
+form-data when a form is 
+submitted
+method get
+post
+Specifies the HTTP method 
+to use when sending formdata
+enctype application/x-www-formurlencoded
+multipart/form-data
+text/plain
+Specifies how the form-data 
+should be encoded when 
+submitting it to the server 
+(only for method="post")
+Html input Elements:
+Here are the different input types you can use in HTML 
+• <input type="button">
+• <input type="checkbox">
+• <input type="date">
+• <input type="email">
+• <input type="file">
+• <input type="hidden">
+• <input type="number">
+• <input type="password">
+• <input type="radio">
+• <input type="range">
+• <input type="reset">
+• <input type="search">
+• <input type="submit">
+• <input type="text">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<form action="/test/menu.html" method="get">
+<table align="center">
+<tr>
+<td> Username </td>
+<td> <input type="text" id="usrname" required> </td>
+</tr>
+<tr>
+<td>Password </td>
+<td> <input type="password" id="pwd" required> </td>
+</tr>
+<tr>
+<td> Enter your Branch </td>
+<td> <fieldset>
+<legend> Select your Branch </legend>
+<input type="radio" name="branch">cse </br>
+<input type="radio" name="branch">i.t </br>
+<input type="radio" name="branch">ece
+</fieldset> </td> 
+</tr> 
+<tr>
+<td>Skill set </td>
+<td> <fieldset>
+<legend>Select your skill's </legend>
+<input type="checkbox" name="C"> C <br/>\ 
+<input type="checkbox" name="C++">C++ <br/>
+<input type="checkbox" name="java">java 
+</fieldset> </td>
+</tr>
+<tr> 
+<td>Enter Email </td>
+<td><input type="email" id="idem"> </td> 
+</tr>
+<tr>
+<td>Date:</td>
+<td><input type="date"/> </td>
+</tr>
+<tr> <td colspan="2"><input type="submit" id="idsub"> </td> </tr>
+</table>
+</form>
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------
+2b) Module Name: Creating Form Elements, Color and Date Pickers, Select and Datalist 
+Elements
+Creating Form Elements, Color and Date Pickers, Select and Datalist Elements
+Color pickers : The <input type="date"> defines a date picker.The resulting value includes the 
+year, month, and day.
+Date pickers: Use the color picker by clicking and dragging your cursor inside the picker area to 
+highlight a color on the right
+Datalist: The <datalist> tag specifies a list of pre-defined options for an <input> element.
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+The <datalist> tag is used to provide an "autocomplete" feature for <input> elements. Users will see 
+a drop-down list of pre-defined options as they input data.
+The <datalist> element's id attribute must be equal to the <input> element's list attribute (this binds 
+them together).
+<!DOCTYPE html>
+<html>
+<head>
+<meta name ="description" content="MeanStack">
+<meta name="keywords" content="Online Shopping Site for Mobiles, Electronics, Furniture, 
+Grocery, Lifestyle, Books & More. Best Offers!">
+<meta name="author" content="third cse">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="/Exercise-1/styles.css">
+<style>
+.divcontent{
+/*margin-left: 50px; 
+margin-right: 50px; 
+margin-top: 50px;*/
+position:fixed;
+left: 50%;
+top:45%;
+max-width: 500px;
+background-color: lightsteelblue; 
+transform: translate(-50%,-50%);
+border-radius: 4px;
+}
+</style>
+</head>
+<body>
+<div class="divcontent ">
+<div style="background-color: blue;color: white;max-width:500px; text-align: center; " > Color 
+and Date Pickers, Select and Datalist Elements </div>
+<table>
+<tr>
+<td>
+Color Picker : 
+</td>
+<td> <input type="color" > </td>
+</tr>
+<tr>
+<td>
+Datepicker </td>
+<td> 
+<input type="date" />
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+</td>
+</tr>
+<tr>
+<td >
+<label> Select city </label>
+</td>
+<td><input list="citys" >
+<datalist id="citys">
+<option value="Hyderabad">
+<option value="Bangalore">
+<option value="Visakhapatnam"></option>
+</datalist></td>
+</tr>
+</div>
+</body>
+</body>
+</html>
+2C) Module Name: Input Elements – Attributes
+Enhance Signup page functionality of IEKart's Shopping application by adding attributes to 
+input elements.
+Signup Page(Registration Page)
+<!DOCTYPE html>
+<html>
+<head>
+<meta name ="description" content="MeanStack">
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+<meta name="keywords" content="Online Shopping Site for Mobiles, Electronics, Furniture, 
+Grocery, Lifestyle, Books & More. Best Offers!">
+<meta name="author" content="third cse">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="/Exercise-1/styles.css">
+<style>
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 2px;
+box-sizing: border-box;
+}
+input[type=password] {
+width: 100%;
+padding: 12px 20px;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 2px;
+box-sizing: border-box;
+}
+input[type=submit] {
+background-color: #04AA6D;
+color: white;
+border: none;
+height: 100%;
+padding: 12px 20px;
+border-radius: 4px;
+cursor: pointer;
+float: left;
+width:100%;
+}
+.divcontent{
+/*margin-left: 50px; 
+margin-right: 50px; 
+margin-top: 50px;*/
+position:fixed;
+left: 50%;
+top:45%;
+max-width: 500px;
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+background-color: lightsteelblue; 
+transform: translate(-50%,-50%);
+border-radius: 4px;
+}
+h3{
+color:white; max-width: 500px; background-color: blue; text-align: center; 
+}
+</style>
+</head>
+<body>
+<header class="header">
+<nav id="logo">
+<a href="homepage.html" class="logo" > 
+<img src="/Exercise-1/logo.png" height="50x" width="50px" >E-kart
+</a>
+</nav>
+<nav class="header-right">
+<a href="#">Login</a>
+<a href="#">Singnup</a>
+<a href="#">Track Order</a>
+<a href="#"> </a>
+<a href="About.html">Aboutus</a>
+</nav>
+</header>
+<body>
+<div class="divcontent ">
+<div style="background-color: blue;color: white;max-width:500px; text-align: center; " > 
+Registration </div>
+<table>
+<tr>
+<td>
+<input type="text" id="txtinp" placeholder="Username" required /> 
+</td>
+<td> <input type="password" id="txtpwd" placeholder="password" required> </td>
+</tr>
+<tr>
+<td>
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+<input type="text" id="txtpincode" placeholder="Pincode"/></td>
+<td> 
+<input type="text" id="txtlocation" placeholder="Location"/>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<textarea cols="55" rows="6" id="address" placeholder="Address(Area and 
+Street)" ></textarea>
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" id="txtcity" placeholder="City/Town"/>
+</td><td>
+<select id="states">
+<option>---Select---</option>
+<option> Andhra Pradesh </option>
+<option> Telangana </option>
+<option>Bihar</option>
+<option>Jharkhand</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" id="txtpincode" placeholder="Landmark"/></td>
+<td> 
+<input type="text" id="txtlocation" placeholder="Phone"/>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Address: </td>
+</tr>
+<tr>
+<td><input type="radio" name="address">Home address </td>
+<td>
+<input type="radio" name="address">Work
+</td>
+</tr>
+<tr>
+<td colspan="2" > 
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+<input type="submit" value="submit"/>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</body>
+</html>
+Output :
+2d). Add media content in a frame using audio, video, iframe elements to the Home page of 
+IEKart's Shopping application.
+For this section we add YouTube video on our homepage using iframe tag 
+The <iframe> tag specifies an inline frame.
+An inline frame is used to embed another document within the current HTML document.
+Add below script in Exercises -1 homepage.html in the place centre div
+<div class="centerdiv"> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a425hb1Zsjc" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+</div> 
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+When we add above script in our homepage.html in Exercises -1 we got output like above. 
+Now click signup link then navigate to registration page 
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+Exercises-3:
+3A)Write a JavaScript program to find the area of a circle using radius (var and let - reassign 
+and observe the difference with var and let) and PI (const)
+Difference between let and var and const :
+In JavaScript, users can declare a variable using 3 keywords that are var, let, and const
+var let const
+The scope of 
+a var variable is 
+functional scope.
+The scope of a let variable is 
+block scope.
+The scope of a const variable 
+is block scope.
+It can be updated and redeclared into the scope.
+It can be updated but cannot 
+be re-declared into the scope.
+It cannot be updated or redeclared into the scope.
+It can be declared without 
+initialization.
+It can be declared without 
+initialization.
+It cannot be declared without 
+initialization.
+It can be accessed without 
+initialization as its default 
+value is “undefined”.
+It cannot be accessed without 
+initialization otherwise it will 
+give ‘referenceError’.
+It cannot be accessed without 
+initialization, as it cannot be 
+declared without initialization.
+Program:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+const pi=3.14;
+var r=9;
+function FindArea(r)
+{
+return pi*r*r;
+}
+let Area= FindArea(r);
+document.writeln(Area);
+</script>
+</head>
+<body>
+</br> 
+</br>
+</body>
+</html>
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+Data Types: Every Variable has a data type that tells what kind of data is being stored in a 
+variable. There are two types of data types in JavaScript namely Primitive data types and Nonprimitive data types.
+Primitive data types: The predefined data types provided by JavaScript language are known as 
+primitive data types. 
+Non-primitive data types: The data types that are derived from primitive data types of the 
+JavaScript language are known as non-primitive data types. It is also known as derived data types 
+or reference data types.
+There are five types of primitive data types in Javascript.
+1. Number: Number data type in javascript can be used to hold decimal values as well as 
+values without decimals.
+2. String: The string data type in javascript represents a sequence of characters that are 
+surrounded by single or double quotes.
+3. Undefined: The meaning of undefined is ‘value is not assigned’.
+4. Boolean: The boolean data type can accept only two values i.e. true and false.
+5. Null: This data type can hold only one possible value that is null.
+Non-Primitive data types in Javascript :
+1. Object: Object in Javascript is an entity having properties and methods. Everything is an 
+object in javascript.
+How to create an object in javascript:
+let student = {firstName:"ravi", lastName:"kumar", age:25, city:"vizag"};
+or
+const student = new Object();
+person.firstName = "ravi";
+person.lastName = "Kumar";
+person.age = 25;
+person.city = "vizag";
+2.Array: With the help of an array, we can store more than one element under a single name.
+Creating array :
+A=[item1,item2,……];
+CONST BIKES = ["TRIUMPH", "BMW", "KAWASAKI NINJA "];
+Template Literals :
+Template Literals use back-ticks (``) rather than the quotes ("") to define a string:
+Interpolation:
+Template literals provide an easy way to interpolate variables and expressions into strings.
+The method is called string interpolation.
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+The syntax is:
+${…}
+Variable Substitutions:
+Template literals allow variables in strings:
+let Subject ="MeanStack";
+let Code = "R2011087";
+let text =`SubjectName : ${Subject} , SubjectCode : ${Code} `;
+document.writeln(text);
+Expression Substitution:
+let Mobileprice=7000;
+let Headset = 100;
+let totprice =`TotalPrice ${(Mobileprice + Headset) } `;
+document.writeln(totprice);
+Another example of Template literals :
+function add() {
+let header = "ACET";
+let tags = ["CSE","ECE","IT"];
+let html =`<h2> ${header} </h2> `;
+for(const x of tags) {
+html +=`<li> ${x} </li>`;
+}
+html +=`</ul>`;
+document.getElementById('demo').innerHTML=html;
+}
+Exercises-3: B) Write JavaScript code to display the movie details such as movie name, 
+starring, language, and ratings. Initialize the variables with values of appropriate types. Use 
+template literals wherever necessary.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Movie Rating </title>
+<style>
+.divcontent{
+/*margin-left: 50px; 
+margin-right: 50px; 
+margin-top: 50px;*/
+position:fixed;
+left: 50%;
+top:20%;
+max-width: 500px;
+background-color: white; 
+transform: translate(-50%,-50%);
+border-radius: 4px;
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+}
+.column {
+float: left;
+width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 2px;
+box-sizing: border-box;
+}
+input[type=submit] {
+background-color:darkorange;
+color: white;
+border: none;
+height: 100%;
+padding: 12px 20px;
+border-radius: 4px;
+cursor: pointer;
+float: left;
+width:100%;
+}
+</style>
+</head>
+<body>
+<div class="divcontent">
+<div class="row">
+<h2> Enter Movie details.... </h2>
+</div>
+<div class="row">
+<div class="column" >
+<input type ="text" id="mname" placeholder="Moviename"/>
+</div>
+<div class="column">
+<input type="text" id="mstar" placeholder="staring"/>
+</div>
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+</div>
+<div class="row">
+<div class="column">
+<input type="text" id="lang" placeholder="Language"/>
+</div>
+<div class="column">
+<input type="text" id="rating" placeholder="ratings"/>
+</div>
+</div>
+<div class="row">
+<input type="submit" onclick="movies()" value="Submit"/>
+</div>
+</br>
+<div class="row" id="tbl" >
+</div>
+</div>
+<script>
+function movies() {
+let M_name;
+let M_star;
+let lang;
+let rating;
+M_name= document.getElementById('mname').value;
+M_star=document.getElementById('mstar').value;
+lang = document.getElementById('lang').value;
+rating = document.getElementById('rating').value;
+starring = M_star.split(',');
+let htm = `<table border=1> 
+<tr> <td> Move Name: </td> <td width:100%>${M_name} </td> </tr>
+<tr> <td> Starring: </td> <td width:100%>${starring} </td> </tr>
+<tr> <td> Language: </td> <td width:100%>${lang} </td> </tr>
+<tr> <td> Ratings: </td> <td width:100%>${rating} </td> </tr> 
+</table>`
+document.getElementById('tbl').innerHTML=htm;
+}
+</script>
+</body>
+</html>
+Output:
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+After enter the details of movie then click submit button out put display like below 
+3 C) Write JavaScript code to book movie tickets online and calculate the total price, 
+considering the number of tickets and price per ticket as Rs. 150. Also, apply a festive season 
+discount of 10% and calculate the discounted amount.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Movie Tickets...</title>
+<style>
+.divcontent
+{
+/*margin-left: 50px; 
+margin-right: 50px; 
+margin-top: 50px;*/
+position:fixed;
+left: 50%;
+top:20%;
+max-width: 500px;
+background-color: white; 
+transform: translate(-50%,-50%);
+border-radius: 4px;
+}
+.column {
+float: left;
+width: 50%;
+}
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+/* Clear floats after the columns */
+.row::after {
+display: table;
+clear: both;
+}
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 2px;
+box-sizing: border-box;
+}
+input[type=submit] {
+background-color:darkorange;
+color: white;
+border: none;
+height: 100%;
+padding: 12px 20px;
+border-radius: 4px;
+cursor: pointer;
+float: left;
+width:100%;
+}
+</style>
+</head>
+<body>
+<div class="divcontent">
+<div class="row">
+Book tickets ...
+</div>
+<div class="row">
+<div class="column">
+<select id="mvs" name="movies">
+<option> Select Movie </option>
+<option> RRR </option>
+<option> Avatar-2</option>
+</select>
+</div>
+<div class="column">
+<input type="text" id="not" placeholder="Number Of Tickets"/>
+</div>
+</div>
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+<div class="row" >
+<input type="submit" value="ADD" onclick="show_price()" />
+</div>
+<div id="price"></div>
+<div id="totaltickets"></div>
+</div>
+<script>
+function show_price()
+{
+const ticketcost = 150;
+let discountpercent=10;
+let not = document.getElementById('not').value;
+let mn = document.getElementById('mvs').value;
+let discountprice = ticketcost * discountpercent/100;
+let totalprice = ticketcost - discountprice;
+let finalprice =`For Movie ${mn}: Cost of ${not} tickets ${(totalprice*not)}`;
+document.getElementById('price').innerHTML= finalprice;
+}
+</script>
+</body>
+</html>
+Output:
+Functions in JavaScript:
+Module Name: Types of Functions, Declaring and Invoking Function, Arrow Function, Function 
+Parameters, Nested Function, Built-in Functions, Variable Scope in Functions
+JavaScript functions are used to perform operations. We can call JavaScript function many times to 
+reuse the code.
+There are mainly two advantages of JavaScript functions.
+1. Code reusability: We can call a function several times so it save coding.
+2. Less coding: It makes our program compact. We don’t need to write many lines of code each 
+time to perform a common task.
+Java script functions example:
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+<script> 
+function msg(){ 
+alert("hello! this is message"); 
+}
+</script> 
+<input type="button" onclick="msg()" value="call function"/> 
+Java script function with arguments:
+<script> 
+function getcube(number){ 
+alert(number*number*number); 
+} 
+</script> 
+<form> 
+<input type="button" value="click" onclick="getcube(4)"/> 
+</form> 
+Function with return values:
+<script> 
+function getInfo(){ 
+return "hello javatscript! How r u?";
+ } 
+a =getinfo();
+document.getelementbyid(a);
+</script> 
+Arrow Function:
+Arrow function were introduced in ES6
+Arrow function allow us to write shorter function syntax:
+let myFunction = (a, b) => a * b;
+Example of arrow function length of the elements of each array:
+const materials = [ ‘ACET','CSE','IT','MECH’];
+console.log(materials.map(material => material.length));
+O/p: 4,3,2,4
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+Exercise - 4
+4 A) Write a JavaScript code to book movie tickets online and calculate the total price based 
+on the 3 conditions: (a) If seats to be booked are not more than 2, the cost per ticket remains 
+Rs. 150. (b) If seats are 6 or more, booking is not allowed.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Movie Tickets...</title>
+<style>
+.divcontent
+{
+/*margin-left: 50px; 
+margin-right: 50px; 
+margin-top: 50px;*/
+position:fixed;
+left: 50%;
+top:20%;
+max-width: 500px;
+background-color: white; 
+transform: translate(-50%,-50%);
+border-radius: 4px;
+}
+.column {
+float: left;
+width: 50%;
+}
+/* Clear floats after the columns */
+.row::after {
+display: table;
+clear: both;
+}
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 2px;
+box-sizing: border-box;
+}
+input[type=submit] {
+background-color:darkorange;
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+color: white;
+border: none;
+height: 100%;
+padding: 12px 20px;
+border-radius: 4px;
+cursor: pointer;
+float: left;
+width:100%;
+}
+</style>
+</head>
+<body>
+<div class="divcontent">
+<div class="row">
+Book tickets ...
+</div>
+<div class="row">
+<div class="column">
+<select id="mvs" name="movies">
+<option> Select Movie </option>
+<option> RRR </option>
+<option> Avatar-2</option>
+</select>
+</div>
+<div class="column">
+<input type="text" id="not" placeholder="Number Of Tickets"/>
+</div>
+</div>
+<div class="row" >
+<input type="submit" value="ADD" onclick="calculate_price()" />
+</div>
+<div id="price"></div>
+<div id="totaltickets"></div>
+</div>
+<script>
+function calculate_price( )
+{
+const ticketcost = 150;
+let discountpercent=10;
+let not = document.getElementById('not').value;
+let mn = document.getElementById('mvs').value;
+if(not>2 && not<6)
+{
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+let sub= (discountpercent)=>{ return ticketcost * discountpercent/100 };
+let discountprice=sub(discountpercent)- ticketcost;
+let finalprice =`For Movie ${mn}: Cost of ${not} tickets ${(discountprice*not)}`;
+document.getElementById('price').innerHTML= finalprice;
+}
+if(not<=2)
+{
+let finalprice = `For Movie ${mn}: Cost of ${not} tickets ${(ticketcost*not)}`;
+document.getElementById('price').innerHTML= finalprice;
+}
+if(not>=6)
+{
+document.getElementById('price').innerHTML="If seats are 6 or more than 6, booking is not 
+allowed";
+}
+}
+</script>
+</body>
+</html>
+Output:
+Check with 3 tickets:
+According to the condition if user book more than 2 less than 6 10% discount on the tickets 
+So that we entered 3 tickets so that our discount price for each ticket 135 so that cost of 3 tickets -
+405
+Check with 6 tickets 
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+Now check with 2 tickets . In this case discount not apply on ticket price. Each ticket price 150
+What is class and constructor in Javascript :
+In JavaScript, classes are the special type of functions. We can define the class just like function 
+declarations and function expressions.
+The JavaScript class contains various class members within a body including methods or constructor. 
+The class is executed in strict mode. So, the code containing the silent error or mistake throws an 
+error.
+Example of Class:
+Class Person
+{ show(){ console.log(“ Method from class person ”) } // this is method in class }
+//let see how to create object for class in javascript
+let obj = new Person()
+obj.show()
+Constructor in Javascript:
+The constructor method is a special method:
+• It has to have the exact name "constructor"
+• It is executed automatically when a new object is created
+• It is used to initialize object properties
+If you do not define a constructor method, JavaScript will add an empty constructor method.
+Example of Constructor :
+class Person {
+constructor(P_name,P_age) {
+this.name = P_name;
+this.age = P_age;
+}
+show() {
+console.log(this.name,this.age);
+}
+}
+let obj =new Person("abc",26);
+obj.show();
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+4b) Create an Employee class extending from a base class Person. Hints: (i) Create a class 
+Person with name and age as attributes. (ii) Add a constructor to initialize the values (iii) 
+Create a class Employee extending Person with additional attributes role.
+class Person{
+constructor(P_name,P_age) {
+this.P_name = P_name;
+this.P_age = P_age;
+}
+}
+class employee extends Person{
+constructor(P_name,P_age,E_salary,E_id){
+super(P_name,P_age);
+this.salary = E_salary;
+this.id= E_id;
+}
+Show() {
+console.log('PersonName:' 
++ this.P_name,'PersonAge:'+ this.P_age,'EmployeeSalary:'+ this.salary, 'Employee_Id:' + this.id);
+}
+}
+let obj= new employee("Raju",25,20000,4705);
+obj.Show();
+output:
+PersonName:Raju PersonAge:25 EmployeeSalary:20000 Employee_Id:4705
+What is Event in JavaScript?
+HTML events are "things" that happen to HTML elements.
+When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+For Example :
+• The user selects, clicks, or hovers the cursor over a certain element.
+• The user chooses a key on the keyboard.
+• The user resizes or closes the browser window.
+• A web page finishes loading.
+• A form is submitted.
+• A video is played, paused, or ends.
+• An error occurs.
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+Common Html Events:
+Example: validate the input length using onkeyup event javascript :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>length Validation</title>
+</head>
+<body>
+<input type="text" id="txtinput" onkeyup="keypress()">
+<div id="msg" > </div>
+<script>
+keypress=()=>
+{ txtvalue = document.getElementById('txtinput').value;
+if(txtvalue.length <=4 )
+{ document.getElementById('msg').style.color ="red";
+document.getElementById('msg').innerHTML="<h4> input must be between 4 and 10 
+characters </h4>"; } 
+else if(txtvalue.length >10)
+{ document.getElementById('msg').style.color ="red";
+document.getElementById('msg').innerHTML="<h4> input must be between 4 and 10 
+characters </h4>";}
+else
+{ document.getElementById('msg').style.color="green";
+document.getElementById('msg').innerHTML="<h4> Valid input </h4>";
+} 
+}
+</script>
+</body>
+</html>
+onchange An HTML element has been changed
+onclick The user clicks an HTML element
+onmouseover The user moves the mouse over an HTML 
+element
+onmouseout The user moves the mouse away from an 
+HTML element
+onkeydown The user pushes a keyboard key
+onload The browser has finished loading the page
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+4C) Write a JavaScript code to book movie tickets online and calculate the total price based on 
+the 3 conditions: (a) If seats to be booked are not more than 2, the cost per ticket remains Rs. 
+150. (b) If seats are 6 or more, booking is not allowed.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Movie Tickets...</title>
+<style>
+.divcontent
+{
+/*margin-left: 50px; 
+margin-right: 50px; 
+margin-top: 50px;*/
+position:fixed;
+left: 50%;
+top:20%;
+max-width: 500px;
+background-color: white; 
+transform: translate(-50%,-50%);
+border-radius: 4px;
+}
+.column {
+float: left;
+width: 50%;
+}
+/* Clear floats after the columns */
+.row::after {
+display: table;
+clear: both;
+}
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 2px;
+box-sizing: border-box;
+}
+input[type=submit] {
+background-color:darkorange;
+color: white;
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+border: none;
+height: 100%;
+padding: 12px 20px;
+border-radius: 4px;
+cursor: pointer;
+float: left;
+width:100%;
+}
+</style>
+</head>
+<body>
+<div class="divcontent">
+<div class="row">
+Book tickets ...
+</div>
+<div class="row">
+<div class="column">
+<select id="mvs" name="movies">
+<option> Select Movie </option>
+<option> RRR </option>
+<option> Avatar-2</option>
+</select>
+</div>
+<div class="column">
+<input type="text" id="not" placeholder="Number Of Tickets" 
+onkeyup="show_price()"/>
+</div>
+</div>
+<div class="row" >
+<input type="submit" value="ADD" onclick="show_price()" />
+</div>
+<div id="price"></div>
+<div id="totaltickets"></div>
+</div>
+<script>
+function show_price()
+{
+const ticketcost = 150;
+let discountpercent=10;
+let not = document.getElementById('not').value;
+let mn = document.getElementById('mvs').value;
+let discountprice = ticketcost * discountpercent/100;
+let totalprice = ticketcost - discountprice;
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+if( not >2 && not <6 ) {
+let finalprice =`For Movie ${mn}: Cost of ${not} tickets ${(totalprice*not)}`;
+document.getElementById('price').innerHTML= finalprice;
+}
+else if(not <=2 ) {
+let finalprice =`For Movie ${mn}: Cost of ${not} tickets ${(ticketcost*not)}`;
+document.getElementById('price').innerHTML= finalprice;
+}
+else {
+let finalprice =" 6 or more than 6 tickets not allowed to book. ";
+document.getElementById('price').innerHTML= finalprice;
+}
+}
+</script>
+</body>
+</html>
+Spread Operator:
+It takes group and try to spread multiple values 
+For example we have one function sum()
+Now move with spread operator: 
+Spread operator syntax …mynum 
+Now let see another example on spread operator :
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+Based on above example you can add only two arguments / values through the function 
+Below example we can add ‘N’ number of arguments with same function using spread operator 
+concept 
+function sum(...args)
+{
+let sum=0;
+for(const arg of args)
+{
+sum += arg;
+}
+return sum;
+}
+console.log(sum(1,2,3,4));
+Output: >node SpreadOperator.js
+10
+JavaScript array is an object that represents a collection of similar type of elements.
+There are 3 ways to construct array in JavaScript
+1. By array literal
+2. By creating instance of Array directly (using new keyword)
+3. By using an Array constructor (using new keyword)
+//Declaring And Initializing Arrays
+//1.array literal 
+var marks;
+marks =[50,90,100];
+console.log(marks[0]);
+console.log(marks[2]);
+//2. using array key word
+var arr_names = new Array(4);
+console.log(arr_names.length);
+for(var i=0; i<arr_names.length; i++)
+{
+arr_names[i] = i*2
+console.log(arr_names[i])
+}
+//3 . using array constructor 
+var names = new Array('acet','cse');
+console.log(names);
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+Exercise - 5
+5a) Create an array of objects having movie details. The object should include the movie name, 
+starring, language, and ratings. Render the details of movies on the page using the array
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<h3> Movie details </h3>
+<div id="md"></div>
+</body>
+<script>
+var Movie_details = [{Name:"RRR",Starring:"Ramcharn,ntr"},{ 
+Name:"Bahubali",Starring:"Prabas" }];
+let output = document.getElementById('md');
+let result = ``;
+for(let i=0; i<Movie_details.length; i++)
+{
+result +=`MovieName: ${Movie_details[i].Name} , Starring: ${Movie_details[i].Starring}` + " ";
+}
+output.innerHTML=result;
+</script>
+</html>
+What is Asynchronous Programming in javascript :
+What is synchronous programming?
+Synchronous programming is a way for computers to do things one step at a time, in the order they 
+are given the instructions.
+What is Asynchronous Programming:
+Asynchronous programming is a way for a computer program to handle multiple tasks 
+simultaneously rather than executing them one after the other 
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+Example of Asynchronous Programming:
+console.log("First call");
+setTimeout(()=>{console.log("Second call")},2000);
+console.log("Third call");
+output: 
+What is callback function in javascript:
+A callback function is a function passed into another function as an argument
+Out put: 10
+Settimeout:
+The setTimeout() method calls a function after a number of milliseconds.
+1 second = 1000 milliseconds.
+For example I have 3 statements sequence like below
+Statement1
+Statement2
+Statement2
+But I want to execute Statement2 after 2 seconds . this time we need to use set timeout
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+Output:
+SetInterval
+The setinterval() function call a functions at specified intervals(in milliseconds)
+The setinterval() method continues calling the function until clearinterval() is called or window 
+closed 
+Below example for setinterval()
+const test = setInterval(()=>{ 
+console.log("hello")
+},2000)
+setTimeout(() => {
+clearInterval(test)
+console.log("byee..");
+}, 20000);
+Output:
+5b) Simulate a periodic stock price change and display on the console. Hints: (i) Create a 
+method which returns a random number - use Math.random, floor and other methods to 
+return a rounded value. (ii) Invoke the method for every three seconds and stop when
+About few functions which we used in above program
+Math.random()=>Math.random() returns a random number between 0 (inclusive), and 1 (exclusive):
+The Math.floor() method rounds a number DOWN to the nearest integer.
+Solution for 5b):
+function getRandomstockprice() {
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+// generate a random number between -1 and 1 (inclusive)
+return Math.floor(Math.random() * 3) - 1;
+}
+function displayPrice(price) {
+console.log("Current price: $" + price.toFixed(2));
+}
+function PriceChanges() {
+let price = 100; // starting price
+const interval = setInterval(() => {
+// generate a random price change
+const priceChange = getRandomstockprice();
+// update the price
+price += priceChange;
+// display the price on the console
+displayPrice(price);
+}, 3000); // invoke the function every 3 seconds
+// stop the changes after 30 seconds (10 iterations)
+setTimeout(() => {
+clearInterval(interval);
+console.log("Changes stopped");
+}, 30000);
+}
+// start the changes of price
+PriceChanges();
+Output:
+5c) Validate the user by creating a login module. Hints: (i) Create a file login.js with a User 
+class. (ii) Create a validate method with username and password as arguments. (iii) If the 
+username and password are equal it will return "Login Successful" else “Wrong Login”
+Login.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+Expt. No. : Page No. :
+Date :
+ 
+ADITYA GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="login.js"></script>
+</head>
+<body>
+<b> Username: </b> <input type="text" id="un"/>
+<b> Password: </b> <input type="password" id="pwd"/>
+<input type="submit" onclick="validate()"/>
+</body>
+</html>
+Login.js
+class user
+{
+constructor(un,pwd)
+{
+this.un = un;
+this.pwd = pwd;
+}
+validate()
+{
+if((this.un=="admin") && (this.pwd=="admin"))
+{
+alert("Login Successful...");
+}
+else
+{
+alert("Wrong Login...");
+}
+}
+}
+function validate()
+{
+un = document.getElementById('un').value;
+pwd = document.getElementById('pwd').value;
+Obj = new user(un,pwd);
+Obj.validate();
+}
+
