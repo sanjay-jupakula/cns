@@ -1,0 +1,418 @@
+Exercise - 1 
+1.a) HTML-5 Module Name: Case-insensitivity, Platform-independency, DOCTYPE 
+Declaration, Types of Elements, Html elements – Attributes, Metadata Elements 
+HTML5:
+HTML5 is the next major revision of the HTML standard superseding HTML 4.01, XHTML 1.0, 
+and XHTML 1.1. HTML5 is a standard for structuring and presenting content on the World Wide 
+Web.
+Html Page Structure :
+HTML tags are not case sensitive: <P> means the same as <p>.
+The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, 
+and demands lowercase for stricter document types like XHTML.
+The DOCTYPE declaration is an instruction to the web browser about what version of HTML the 
+page is written in. This ensures that the web page is parsed the same way by different web browsers.
+Case-insensitivity: HTML is case-insensitive, meaning that tags, attributes, and attribute values can 
+be written in either uppercase or lowercase letters. For example, <P> and <p> both represent a 
+paragraph element in HTML.
+DOCTYPE Declaration: The DOCTYPE declaration is a required element in HTML that specifies 
+the type of HTML document. It is used by web browsers to determine which version of HTML to 
+use when rendering a page.
+Types of Elements: HTML elements can be divided into two types: block-level elements and inline 
+elements. Block-level elements start on a new line and take up the full width of their parent 
+container, while inline elements are placed within the flow of the text and only take up as much 
+width as necessary.
+HTML5 Elements: HTML5 elements are marked up using start tags and end tags. Tags are 
+delimited using angle brackets with the tag name in between.
+
+The difference between start tags and end tags is that the latter includes a slash before the tag name.
+Following is the example of an HTML5 element −
+<p>...</p>
+HTML5 tag names are case insensitive and may be written in all uppercase or mixed case, although 
+the most common convention is to stick with lowercase.
+Most of the elements contain some content like <p>...</p> contains a paragraph. Some elements, 
+however, are forbidden from containing any content at all and these are known as void elements. For 
+example, br, hr, link, meta, etc.
+Type of elements:
+• Audio Element
+• Canvas Element
+• Input Types
+• Output Element
+• Progress Element
+• SVG Element(Scalable Vector Graphics (SVG))
+• Video Element
+Source : https://docs.aws.amazon.com/silk/latest/developerguide/html5-elements.html#canvaselement
+HTML5 ATTRIBUTES 
+Elements may contain attributes that are used to set various properties of an element.
+Some attributes are defined globally and can be used on any element, while others are defined for 
+specific elements only. All attributes have a name and a value and look like as shown below in the 
+example.
+Following is the example of an HTML5 attribute which illustrates how to mark up a div element with 
+an attribute named class using a value of "example" –
+<div class = "example">...</div>
+Attributes may only be specified within start tags and must never be used in end tags.
+HTML5 attributes are case insensitive and may be written in all uppercase or mixed case, although 
+the most common convention is to stick with lowercase.
+The basic Structure of html5 document 
+The following tags have been introduced for better structure −
+• section − This tag represents a generic document or application section. It can be used together 
+with h1-h6 to indicate the document structure.
+• article − This tag represents an independent piece of content of a document, such as a blog entry 
+or newspaper article.
+• aside − This tag represents a piece of content that is only slightly related to the rest of the page.
+• header − This tag represents the header of a section.
+• footer − This tag represents a footer for a section and can contain information about the author, 
+copyright information, et cetera.
+• nav − This tag represents a section of the document intended for navigation.
+• dialog − This tag can be used to mark up a conversation.
+• figure − This tag can be used to associate a caption together with some embedded content, such 
+as a graphic or video.
+Metadata Element: Metadata is data that provides information about other data. In HTML, metadata 
+elements provide information about the document and are placed in the <head> section of the HTML 
+code. Examples of metadata elements include the <meta> tag, which provides information such as 
+keywords and a description of the page, and the <title> tag, which provides the title of the page that 
+is displayed in the browser's title bar.
+Example Program for above basic tags:
+<!DOCTYPE html> 
+<html> 
+ <head> 
+ <meta charset = "utf-8"> 
+ <title>...</title> 
+ </head> 
+ <body> 
+ <header role = "banner"> 
+ <h1>HTML5 Document Structure Example</h1> 
+ <p>This page should be tried in safari, chrome or Mozila.</p> 
+ </header> 
+ <nav> 
+ <ul> 
+ <li><a href = "http://www.acet.ac.in/" target="_blank" >ACET</a></li> 
+ <li><a href = "http://www.acet.ac.in/?p=CSE" target="_blank" >CSE</a></li> 
+ <li><a href = "http://www.acet.ac.in/?p=IT" target="_blank">
+ IT</a></li> 
+ </ul> 
+ </nav> 
+ <article> 
+ <section> 
+ <p>Once article can have multiple sections</p>
+ </section> 
+ </article> 
+ <aside> 
+ <p>This is aside part of the web page</p> 
+ </aside>  GROUP OF EDUCATIONAL INSTITUTIONS, SURAMPALEM Reg. No. _______________________ 
+ 
+ <footer> 
+ <p>Created by <a href = "">veerendra</a></p> 
+ </footer> 
+ </body> 
+</html>
+
+----------------------------------------------------------------------------------------------------
+Tags in Exercises-1 a)
+<!Doctype>=> The HTML document type declaration, also known as DOCTYPE , is the first line 
+of code required in every HTML or XHTML document. The DOCTYPE declaration is an 
+instruction to the web browser about what version of HTML the page is written in
+Metatag=> the meta tag defines the meta data about html document 
+Metatag always in side the <head> element and meta tag used to specify the character set page 
+description , keywords ,author of the document and viewport settings 
+We have two important attributes for meta tag 
+1. name 
+2. content 
+3. http-equiv
+1. name
+we have 4 important values for name attributes those are description, keywords , author ,viewport 
+description => description of web page (Information about webpage)
+keywords => keyword for define the search engine 
+author => define the author’s name 
+viewport => to make webpage device compatibility 
+2. Content 
+Specifies the value associated with the http-equiv or name attribute
+3. http-equiv 
+Provides an HTTP header for the information/value of the content attribute
+Example of viewport 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+This gives the browser instructions on how to control the page's dimensions and scaling.
+The width=device-width part sets the width of the page to follow the screen-width of the device 
+(which will vary depending on the device).
+The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+Initial-scale range 1.0 to 10
+
+---------------------------------------------------------------------------------------------------------
+1b) Sectioning elements 
+Sectioning elements in HTML refer to HTML elements that define the structure and organization of 
+a web page. These elements are used to divide the content into sections and allow accessibility 
+features such as navigation and headings.
+The main sectioning elements in HTML are:
+<header>: used to define a header for a document or section
+<nav>: used to define navigation links
+<main>: used to define the main content of a document
+<article>: used to define an independent, self-contained article
+<section>: used to define a standalone section of a document
+<aside>: used to define content that is tangentially related to the main content
+<footer>: used to define a footer for a document or section.
+Using these sectioning elements correctly can improve the accessibility and structure of your web 
+pages.
+
+-------------------------------------------------------------------------------------------------
+1C) Module Name: Paragraph Element, Division and Span Elements, List Element
+Paragraph Element:
+The <p> tag defines a paragraph. Browsers automatically add a single blank line before and after 
+each <p> element.
+Example : <p> This is Element P</p>
+Division:
+The div tag is known as Division tag. The div tag is used in HTML to make divisions of content 
+in the web page like (text, images, header, footer, navigation bar, etc). Div tag has both 
+open(<div>) and closing (</div>) tag and it is mandatory to close the tag. The Div is the most 
+usable tag in web development because it helps us to separate out data in the web page and we 
+can create a particular section for particular data or function in the web pages.
+<div>
+<h1>Aditya College of Engineering and Technology</h1>
+<h2>Aditya College of Engineering </h2>
+<h3>Aditya Engineering College </h3>
+</div>
+Span:
+The <span> tag is an inline container used to mark up a part of a text, or a part of a document. 
+The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id 
+attribute. The <span> tag is much like the <div> element, but <div> is a block-level element and 
+<span> is an inline element.
+<span> sample text </span>
+List Element:
+HTML Lists are used to specify lists of information. All lists may contain one or more list elements. 
+There are three different types of HTML lists:
+1. Ordered List or Numbered List (ol)
+2. Unordered List or Bulleted List (ul)
+HTML ORDERED LIST OR NUMBERED LIST
+In the ordered HTML lists, all the list items are marked with numbers by default. It is known as 
+numbered list also. The ordered list starts with <ol> tag and the list items start with <li> tag.
+<ol> 
+<li>ACET</li> 
+<li>AEC</li> 
+<li>ACOE</li> 
+</ol> 
+Output:
+1. ACET
+2. AEC
+3. ACOE
+HTML UNORDERED LIST OR BULLETED LIST
+In HTML Unordered list, all the list items are marked with bullets. It is also known as bulleted list 
+also. The Unordered list starts with <ul> tag and list items start with the <li> tag.
+<ul>
+<li>ACET</li> 
+<li>AEC</li> 
+<li>ACOE</li> 
+</ul>
+Output:
+o ACET
+o AEC
+o ACOE
+
+-------------------------------------------------------------------------------------------------
+CSS (cascading style sheets) 
+Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a 
+document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). 
+CSS describes how elements should be rendered on screen, on paper, in speech, or on other media
+Types of CSS
+Cascading Style Sheet(CSS) is used to set the style in web pages that contain HTML elements. It 
+sets the background color, font-size, font-family, color, … etc property of elements on a web 
+page.
+There are three types of CSS which are given below:
+• Inline CSS
+• Internal or Embedded CSS
+• External CSS
+Inline CSS: Inline CSS contains the CSS property in the body section attached with element is 
+known as inline CSS. This kind of style is specified within an HTML tag using the style attribute.
+<p style = "color:#009900; font-size:50px;
+ font-style:italic; text-align:center;">
+ Aditya
+ </p>
+Internal or Embedded CSS: This can be used when a single HTML document must be styled 
+uniquely. The CSS rule set should be within the HTML file in the head section i.e the CSS is 
+embedded within the HTML file.
+<head>
+ <title>Internal CSS</title>
+ <style>
+ .ptag {
+ font-style:bold;
+ font-size:20px;
+ }
+ </style>
+ </head>
+<body>
+<div class ="ptag">
+A computer science Engineering
+</div>
+</body>
+External CSS: External CSS contains separate CSS file which contains only style property with 
+the help of tag attributes (For example class, id, heading, … etc). CSS property written in a 
+separate file with .css extension and should be linked to the HTML document using link tag. This 
+means that for each element, style can be set only once and that will be applied across web pages.
+Example: The file given below contains CSS property. This file save with .css extension. For 
+Ex: style.css 
+body {
+ background-color:powderblue;
+}
+#ptag {
+ font-style:bold;
+ font-size:20px;
+}
+
+/////////////////////////////////////////////////////////////////
+Below is the HTML file that is making use of the created external style sheet 
+• link tag is used to link the external style sheet with the html webpage.
+• href attribute is used to specify the location of the external style sheet file.
+<html>
+ <head>
+ <link rel="stylesheet" href="geeks.css"/>
+ </head>
+ <body>
+ 
+ <div id ="ptag">
+ A computer science Engineering
+ </div>
+ </body>
+</html>
+Exercises-1(Program) 
+Style.css 
+.centerdiv
+{
+position: fixed;
+left:50%;
+top:50%;
+padding: 10px;
+transform: translate(-50%,-50%);
+border: 2px solid black;
+background-color: whitesmoke;
+border-radius: 25px;
+box-shadow: 10px 10px 10px cornflowerblue;
+/*The CSS transform property "translate(-50%,-50%)" 
+moves an element along the x-axis and y-axis by -50% 
+of its own width and height respectively, 
+relative to its current position. 
+*/
+}
+body{ 
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+overflow: hidden;
+background-color: #f1f1f1;
+}
+.header a {
+float: left;
+color: black;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 18px; 
+line-height: 25px;
+border-radius: 4px;
+}
+.header-right {
+float: right;
+}
+.header a.logo {
+font-size: 25px;
+font-weight: bold;
+}
+#left{
+float: left;
+border-radius: 25px;
+background-color: whitesmoke;
+margin: 50px; 
+font-family: Arial, Helvetica, sans-serif;
+font-size:medium;
+}
+Home.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name ="description" content="MeanStack">
+<meta name="keywords" content="Online Shopping Site for Mobiles, Electronics, Furniture, 
+Grocery, Lifestyle, Books & More. Best Offers!">
+<meta name="author" content="third cse">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="refresh" content="2">
+<link rel="stylesheet" href="styles.css">
+<style>
+</style>
+</head>
+<body>
+<header class="header">
+<nav id="logo">
+<a href="homepage.html" class="logo" > 
+<img src="logo.png" height="50x" width="50px" >E-kart
+</a>
+</nav>
+<nav class="header-right">
+<a href="#">Login</a>
+<a href="#">Singnup</a>
+<a href="#">Track Order</a>
+<a href="About.html">Aboutus</a>
+</nav>
+</header>
+<br/>
+<div class="centerdiv"> 
+<p style="font-size: medium ; font-family: 'Times New Roman', Times, serif;">
+IEKart's is an online shopping website that sells goods in retail. This company deals 
+with various categories like Electronics, Clothing, Accessories etc </p> 
+<h1>Today Offers</h1>
+<section>
+<h2>Offers on samsung Mobile </h2>
+<p>offers on s21,s23 ,A50 <a href="#">please check </a></p>
+</section>
+<section>
+<h2>Offers on Shoes </h2>
+<p>Offers on Nike , Addidas, Sketchers <a href="#">please check </a>...</p>
+</section>
+</div>
+</body>
+</html>
+Aboutus.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<title> About Page </title>
+</head>
+<body>
+<header class="header">
+<nav id="logo">
+<a href="homepage.html" class="logo" > 
+<img src="logo.png" height="50x" width="50px" >E-kart
+</a>
+</nav>
+<nav class="header-right">
+<a href="#">Login</a>
+<a href="#">Singnup</a>
+<a href="#">Track Order</a>
+<a href="About.html">Aboutus</a>
+</nav>
+</header>
+<div id="left">
+<h1> About Lab </h1>
+<ul type="Square">
+<li> Develop professional webpages of an application using html elements </li>
+<li>Utilize javascript for developing interactive html web pages and validat form data.</li>
+<li>Build a basic web serve using node.js and also working with node package manager </li>
+<li>Build a web serve using express.js</li>
+<li>Make use of type script to optimize java script code by using the concept of strict type 
+checking. </li>
+</ul>
+</div>
+<div id="left">
+<h1>About Website</h1>
+<ul type="circle">
+<li>
+it is demo type of application for E-kart
+</li>
+<li>
+like flipkart,amazon,myntra,Ajio,...etc
+</li>
+<li> For front end .we need to use few technologies like html5,css,javascript </li>
+<li> For Back-end we need to use Nodejs, expressjs,Typescript</li>
+<li> Through this lab we will get good idea on E-commerce applications </li>
+</ul>
+</div>
+</body>
+</html>
